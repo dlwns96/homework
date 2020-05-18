@@ -1,0 +1,16 @@
+Dependencies 추가 
+WEB-INF 폴더 안에 
+lib 폴더추가
+D:\app\M-18\product\11.2.0\dbhome_1\jdbc\lib 경로에있는 ojdbc6.jar 복사
+lib폴더에 붙여넣기.
+
+pom.xml 소스에 
+디펜던시스 안에 
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.4</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc6.jar</systemPath>
+		</dependency>
+추가하고 Maven Dependencies에 추가되는지 확인.
